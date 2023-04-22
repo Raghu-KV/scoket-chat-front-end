@@ -1,5 +1,17 @@
+import Join from "./pages/Join";
+import Chat from "./pages/Chat";
+
+import { Routes, Route } from "react-router-dom";
+
 function App() {
-  return <div className="text-3xl font-bold underline">test</div>;
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Join />} />
+        <Route path="/chat" element={<Chat />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;

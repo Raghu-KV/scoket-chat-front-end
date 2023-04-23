@@ -27,6 +27,7 @@ function Chat() {
       };
       await socket.emit("send_message", messageData);
       setMessageList((prvMessage) => [...prvMessage, messageData]);
+      setCurrentMessage("");
     }
   };
 
@@ -71,6 +72,7 @@ function Chat() {
         <div className="chat-footer flex mt-2">
           <input
             type="text"
+            value={currentMessage}
             placeholder="enter your message..."
             onChange={(event) => setCurrentMessage(event.target.value)}
             className="w-full block px-4 py-3 border-2 border-blue-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:drop-shadow-xl rounded-l-lg"

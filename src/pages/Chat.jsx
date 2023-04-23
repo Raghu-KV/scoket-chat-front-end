@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import io from "socket.io-client";
 import ScrollToBottom from "react-scroll-to-bottom";
 
-const BACK_END_URL = "http://localhost:4000";
+const BACK_END_URL = "https://scoket-chat-back-end.vercel.app";
 const socket = io.connect(BACK_END_URL);
 
 function Chat() {

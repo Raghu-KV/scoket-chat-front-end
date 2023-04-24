@@ -38,15 +38,15 @@ function Chat() {
   }, [socket]);
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen border-3 ">
+    <div className="flex flex-col justify-center items-center min-h-screen border-3 ">
       <div className="w-5/6 md:w-2/3">
         <div className="chat-header bg-gray-500 py-3 rounded-t-xl">
           <p className=" text-center text-2xl font-bold text-white">
             Live chat
           </p>
         </div>
-        <div className="chat-body h-[30rem] md:h-[40rem] border-2 border-gray-500">
-          <ScrollToBottom className="h-[29rem] md:h-[39rem]">
+        <div className="chat-body h-[30rem] 2xl:h-[40rem] border-2 border-gray-500">
+          <ScrollToBottom className="h-[29rem] 2xl:h-[39rem]">
             {messageList.map((message, index) => (
               <div key={index}>
                 <div

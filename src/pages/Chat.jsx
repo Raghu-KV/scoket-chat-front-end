@@ -38,7 +38,7 @@ function Chat() {
   }, [socket]);
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen border-3 ">
+    <div className="flex flex-col justify-center items-center min-h-screen border-3 bg-gray-200 ">
       <div className="w-5/6 md:w-2/3">
         <div className="chat-header bg-gray-500 py-3 rounded-t-xl">
           <p className=" text-center text-2xl font-bold text-white">
@@ -75,7 +75,7 @@ function Chat() {
             value={currentMessage}
             placeholder="enter your message..."
             onChange={(event) => setCurrentMessage(event.target.value)}
-            className="w-full block px-4 py-3 border-2 border-blue-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:drop-shadow-xl rounded-l-lg"
+            className="w-full block px-4 py-3 border-2 border-blue-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:drop-shadow-xl rounded-l-lg bg-gray-200 "
           />
           <button
             className="px-3 md:px-10 bg-blue-500 text-white rounded-r-lg"

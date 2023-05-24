@@ -98,7 +98,7 @@ function Chat() {
       </div>
     );
   } else {
-    return <h1>Loading...</h1>;
+    return <h1 className="font-bold text-center mt-52">Loading...</h1>;
   }
 }
 
